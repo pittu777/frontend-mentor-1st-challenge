@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure at least 100% viewport height */
+}
+
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjusted width for better responsiveness */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+    text-align: center; /* Center the content within the container */
+}
+
+.image-container {
+    text-align: center; /* Center the content within image-container */
+}
+
+img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-family: "Outfit", sans-serif;
+    font-weight: bold; /* Corrected the property name */
+    margin: 10px 0; /* Adjusted margin for better spacing */
+}
+
+.p-container {
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    font: bold;
+    font-family: "Outfit", sans-serif;
+    margin: 10px 0; /* Adjusted margin for better spacing */
+    text-align: center; /* Center the text within p-container */
+}
+
+@media (min-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 20%; /* Adjusted width for larger screens */
+    }
+
+    img {
+        max-width: 100%; /* Set max-width to ensure responsiveness */
+    }
+}
